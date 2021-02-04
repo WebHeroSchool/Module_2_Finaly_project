@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>LOCO</title>
+		<!--<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="fonts.css">-->
+	</head>
+	
+	<body>
+		<header class="header">
+			<div class="header__logo header__logo_mobile">LOCO</div>
+
+			<div class="lang">
+				<input id="lang__toggle" type="checkbox"/>
+				<label class="lang__button" for="lang__toggle">
+					<span></span>
+				</label>
+			</div>
+				
+  			<div class="menu">
+  				<input id="menu__toggle" type="checkbox"/>
+				<label class="menu__button" for="menu__toggle">
+					<span></span>
+				</label>
+  			</div>
+		</header>
+<!--Продолжить рекактирование по БЭМ отсюда-->
+		<main>
+			<div class="content">
+				<div class="content__picture"></div><!--Добавить главную картинку через background-->
+				
+				<div class="content-container">
+					<div class="main">
+						<h1 class="main__title main__title_mobile">Новая<br>коллекция</h1>
+					</div>
+					<div class="description">
+						<p class="description__main description__main_mobile">
+								Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.
+						</p>							
+					</div>
+					<div class="links">
+						<button class="links__button">ЧИТАТЬ ДАЛЬШЕ</button>
+						<div class="links-other">
+							<a class="links-other__description">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
+							<img class="links-other__vector" src="img/Vector_1.svg" alt="links-other__vector">
+						</div>							
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer class="footer">
+			<div class="contacts">
+				<a class="contacts__socials" href="#">
+					<img class="contacts__socials_inst" src="img/INST.svg">
+				</a>
+				<a class="contacts__socials" href="#">
+					<img class="contacts__socials_vk" src="img/VK.svg">
+				</a>
+				<a class="contacts__socials" href="#">
+					<img class="contacts__socials_fb" src="img/FB.svg">
+				</a>
+			</div>
+			<div class="item">
+				<span class="item__line"></span>
+			</div>
+		</footer>
+	
+		<section class="product">
+			<div class="product-picture">
+				<img class="product-picture__gray" src="img/gray.svg" alt="product-picture__gray">
+				<img class="product-picture__pink" src="img/pink.svg" alt="product-picture__pink">
+			</div>
+
+			<div class="product-container">
+				<div class="product-case">
+					<h1 class="product-case__title">Кожаный клатч</h1>
+					<h4 class="product-case__subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h4>
+					<p class="product-case__description">Бесплатная доставка включена. Предложение действует на сайте loco.com и в магазинах до 18.09.2018. Для получения скидки в магазинах предъявите скриншот данного предложения. В магазинах предложение не суммируется с другими акциями, предложениями и распродажей.</p>
+					<div class="product-case__color">
+						<span class="color_gray"></span>
+						<span class="color_pink"></span>
+						<span class="color_blue"></span>
+						<span class="color_green"></span>
+						<h1 class="product_price">1990₽</h1>
+					</div>
+					<div class="product-case__buttons">
+						<div class="product-counter">
+							<span class="product-counter__minus">-</span>
+							<input class="product-counter__num" type="text" value="1">
+							<span class="product-counter__plus">+</span>
+						</div>
+						<button class="product-btn">ДОБАВИТЬ В КОРЗИНУ</button>
+					</div>
+				</div>
+				<div class="product-footer">
+	    			<a class="product-footer__link" href=#>ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+	  			</div>
+			</div>
+		</section>
+
+		<section class="look">
+			<div class="look-picture">
+				<img class="look-picture__full" src="img/look.svg" alt="look-picture__full">
+			</div>
+
+			<div class="look-container">
+				<div class="look-case">
+					<h1 class="look-case__title">Serene Total Look</h1>
+					<h4 class="look-case__subtitle">ОСЕННЯЯ КОЛЛЕКЦИЯ</h4>
+					<p class="look-case__description">Джинсы, свитер, обувь.<br>В комплект также входит пакет ароматного чая и кружка.</p>
+					
+					<div class="look-case__buttons">
+						<div class="look-counter">
+							<span class="look-counter__minus">-</span>
+							<input class="look-counter__num" type="text" value="1">
+							<span class="look-counter__plus">+</span>
+						</div>
+						<button class="look-button">ДОБАВИТЬ В КОРЗИНУ</button>
+					</div>
+				</div>
+				<div class="look-footer">
+	    			<a class="look-footer__link" href=#>ДРУГИЕ ТОВАРЫ НА LOCO.COM</a>
+	  			</div>
+			</div>
+		</section>
+	</body>
+</html>
