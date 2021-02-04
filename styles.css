@@ -1,0 +1,107 @@
+body{
+	margin: 0 auto;
+	border: dashed 1px red;
+}
+
+.header{
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	background: linear-gradient(to right, #000 32%, #fff 32%);
+	border: dashed 1px red;
+}
+
+.header__logo{
+	display: flex;
+	align-items: center;
+	padding-left: 52px;
+	font: normal 30px/37px montserratregular, arial, helvetica, sans-serif;
+	color: #fff;
+	border: dashed 1px red;
+}
+
+.lang{
+	display: flex;
+	border: dashed 1px red;
+	margin-right: 46%;
+	align-items: center; 
+	cursor: pointer;
+	font: 500 20px/24px montserratregular, arial, helvetica, sans-serif;
+	color: #fff;
+}
+
+.menu {
+	display: flex;
+	align-items: center; 
+	justify-content: center; 
+	border: dashed 1px red;
+	width: 92px;
+	height: 92px;
+	background: #E5E5E5;
+}
+
+.menu__button{
+	display: flex;
+	align-items: center;
+	width: 35px;
+	height: 12px;
+	cursor: pointer;
+	z-index: 1;
+}
+
+.menu__button > span,
+.menu__button > span::after,
+.menu__button > span::before {
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 4px;
+	background-color: #E5E5E5;
+}
+
+.menu__button > span::after{
+	content: '';
+	top: 1px;
+	background-color: #000;
+}
+.menu__button > span::before{
+	content: '';
+	top: -5px;
+	background-color: #000;
+}
+
+/*.lang{
+	display: flex;
+	align-items: center;  
+    position: absolute;
+    top: 50%;
+	transform: translateY(-50%);
+	left: 26%;
+	width: 73px;
+	cursor: pointer;
+	z-index: 1;
+	font: 500 20px/24px montserratregular, arial, helvetica, sans-serif;
+	color: #fff;
+	border: dashed 1px red;
+}*/
+.lang__button{
+	cursor: pointer;
+	content: "";
+	display: inline-block;
+	background: #000;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	width: 6px;
+	height: 6px;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	margin-left: 12px;
+}
+
+#lang__toggle{
+	display: none;
+}
+
+#menu__toggle{
+	display: none;
+}
