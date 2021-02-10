@@ -1,6 +1,5 @@
 body{
 	margin: 0 auto;
-	border: dashed 1px red;
 }
 
 .header{
@@ -8,7 +7,6 @@ body{
 	justify-content: space-between;
 	position: relative;
 	background: linear-gradient(to right, #000 32%, #fff 32%);
-	border: dashed 1px red;
 }
 
 .header__logo{
@@ -17,12 +15,10 @@ body{
 	padding-left: 52px;
 	font: normal 30px/37px montserratregular, arial, helvetica, sans-serif;
 	color: #fff;
-	border: dashed 1px red;
 }
 
 .lang{
 	display: flex;
-	border: dashed 1px red;
 	margin-right: 46%;
 	align-items: center; 
 	cursor: pointer;
@@ -30,11 +26,24 @@ body{
 	color: #fff;
 }
 
+.lang__button{
+	cursor: pointer;
+	content: "";
+	display: inline-block;
+	background: #000;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+	width: 6px;
+	height: 6px;
+	transform: rotate(-45deg);
+	transform-origin: 0 100%;
+	margin-left: 12px;
+}
+
 .menu {
 	display: flex;
 	align-items: center; 
 	justify-content: center; 
-	border: dashed 1px red;
 	width: 92px;
 	height: 92px;
 	background: #E5E5E5;
@@ -70,32 +79,45 @@ body{
 	background-color: #000;
 }
 
-/*.lang{
-	display: flex;
-	align-items: center;  
-    position: absolute;
-    top: 50%;
-	transform: translateY(-50%);
-	left: 26%;
-	width: 73px;
-	cursor: pointer;
-	z-index: 1;
+.menu__box{
+	display: block;
+	position: fixed;
+	visibility: hidden;
+	top: 0;
+	right: 0;
+	width: 30%;
+	height: 100%;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	background-color: #E5E5E5;
+}
+
+.menu__box_item {
+	display: block;
+	margin-bottom: 24px;
 	font: 500 20px/24px montserratregular, arial, helvetica, sans-serif;
-	color: #fff;
-	border: dashed 1px red;
-}*/
-.lang__button{
-	cursor: pointer;
-	content: "";
-	display: inline-block;
-	background: #000;
-	border-left: 2px solid #fff;
-	border-bottom: 2px solid #fff;
-	width: 6px;
-	height: 6px;
-	transform: rotate(-45deg);
-	transform-origin: 0 100%;
-	margin-left: 12px;
+	text-decoration: none;
+	color: #000;
+	width: max-content;
+	margin-left: auto;
+	margin-right: auto;
+ }
+
+#menu__toggle:checked ~ .menu__button > span::before {
+	top: 0;
+	transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__button > span::after {
+	transform: rotate(135deg);
+}	
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	right: 0;
+}
+
+#lang__toggle:cheked ~ .lang__button{
+	transform: rotate(0.5turn);
 }
 
 #lang__toggle{
@@ -104,4 +126,22 @@ body{
 
 #menu__toggle{
 	display: none;
+}
+
+.content {
+	background: linear-gradient(to right, #000 32%, #fff 32%);
+	height: 83vh;
+	display: grid;
+	grid-template-columns: 10% 40% 50%;
+	grid-template-rows: 15% 70% 15%;
+	justify-content: space-evenly;
+}   
+
+.content__picture {
+	grid-column: 2;
+	grid-row: 2; 
+	display: flex;
+	align-items: center;
+	align-self: center;
+	justify-content: space-evenly;
 }
