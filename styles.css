@@ -40,6 +40,38 @@ body{
 	margin-left: 12px;
 }
 
+.lang__button:hover {
+	opacity: .5;
+	transition: opacity 1s ease-out;
+}
+
+.lang__box{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: fixed;
+	visibility: hidden;
+	top: 60px;
+	left:27%;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	background-color: #000;
+}
+
+.lang__box_item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font: 500 20px/24px montserratregular, arial, helvetica, sans-serif;
+	text-decoration: none;
+	color: #fff;
+ }
+
+.lang__box_item:hover {
+	opacity: .5;
+	transition: opacity 1s ease-out;
+}
 .menu {
 	display: flex;
 	align-items: center; 
@@ -57,6 +89,12 @@ body{
 	cursor: pointer;
 	z-index: 1;
 }
+
+.menu__button:hover {
+	opacity: .5;
+	transition: opacity 1s ease-out;
+}
+
 
 .menu__button > span,
 .menu__button > span::after,
@@ -80,13 +118,15 @@ body{
 }
 
 .menu__box{
-	display: block;
+	display: flex;
 	position: fixed;
+	align-items: center;
+	justify-content: center;
 	visibility: hidden;
 	top: 0;
 	right: 0;
 	width: 30%;
-	height: 100%;
+	height: 650px;
 	margin: 0;
 	list-style: none;
 	text-align: center;
@@ -94,15 +134,17 @@ body{
 }
 
 .menu__box_item {
-	display: block;
-	margin-bottom: 24px;
+	display: flex;
 	font: 500 20px/24px montserratregular, arial, helvetica, sans-serif;
 	text-decoration: none;
 	color: #000;
 	width: max-content;
-	margin-left: auto;
-	margin-right: auto;
  }
+
+.menu__box_item:hover {
+	opacity: .5;
+	transition: opacity 1s ease-out;
+}
 
 #menu__toggle:checked ~ .menu__button > span::before {
 	top: 0;
@@ -116,10 +158,13 @@ body{
 	right: 0;
 }
 
-#lang__toggle:cheked ~ .lang__button{
-	transform: rotate(0.5turn);
+#lang__toggle:checked ~ .lang__box {
+	visibility: visible;
 }
 
+#lang__toggle:checked ~ .lang__button {
+	transform: rotate(135deg);
+}
 #lang__toggle{
 	display: none;
 }
@@ -135,6 +180,7 @@ body{
 	grid-template-columns: 10% 40% 50%;
 	grid-template-rows: 15% 70% 15%;
 	justify-content: space-evenly;
+
 }   
 
 .content__picture {
@@ -144,4 +190,29 @@ body{
 	align-items: center;
 	align-self: center;
 	justify-content: space-evenly;
+}
+
+.main_picture {
+	width: 90%;
+	height: auto;
+
+}
+
+.content-container {
+	width: 500px;
+	height: auto;
+	grid-column: 3;
+	grid-row: 2;
+	border: dashed 1px red;
+	display: flex;
+	flex-flow: column nowrap;
+}
+
+/*.main {
+	font: bold 80px/82px montserratbold, arial, helvetica, sans-serif;
+}*/
+.main__title{
+	font: bold 80px/82px montserratbold, arial, helvetica, sans-serif;
+	margin: 94px 0 0 0;
+
 }
