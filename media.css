@@ -65,7 +65,7 @@
 .content {
   background:  #fff;
   background-image: url(img/pete-bellis-432867-unsplash.png);
-  background-size: cover;
+  background-size: 100% 100%;
   display: flex;
   justify-content: end;
   flex-direction: column-reverse;
@@ -81,6 +81,7 @@
 .main__title_mobile {
   font: bold 50px/51px Raleway, arial, helvetica, sans-serif;
 }
+
 
 
 
