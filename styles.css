@@ -1,5 +1,6 @@
 body{
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 .header{
@@ -73,6 +74,7 @@ body{
 	transition: opacity 1s ease-out;
 }
 .menu {
+	position: relative;
 	display: flex;
 	align-items: center; 
 	justify-content: center; 
@@ -353,7 +355,7 @@ body{
 }
 
 .product-case {
-	margin: 40px 65px 40px 55px;
+	margin: 40px 65px 80px 55px;
 }
 
 .product-case__title {
@@ -465,7 +467,6 @@ body{
 	display: grid;
 	grid-row: 1;
 	grid-template-columns: 32% 68%;
-	margin-bottom: 80px;
 }
 
 .product-counter {
