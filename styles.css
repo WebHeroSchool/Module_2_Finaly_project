@@ -84,13 +84,13 @@ body{
 }
 
 .menu__button{
-	/*position: fixed;*/
+	position: fixed;
 	display: flex;
 	align-items: center;
 	width: 35px;
 	height: 12px;
 	cursor: pointer;
-	z-index: 1;
+	z-index: 3;
 }
 
 .menu__button:hover {
@@ -129,11 +129,12 @@ body{
 	top: 0;
 	right: 0;
 	width: 30%;
-	height: 650px;
+	height: 100%;
 	margin: 0;
 	list-style: none;
 	text-align: center;
 	background-color: #E5E5E5;
+	z-index: 2;
 }
 
 .menu__box_item {
@@ -158,7 +159,7 @@ body{
 }	
 #menu__toggle:checked ~ .menu__box {
 	visibility: visible;
-	right: 0;
+/*	right: 0;*/
 }
 
 #lang__toggle:checked ~ .lang__box {
@@ -178,22 +179,13 @@ body{
 
 .content {
 	background: linear-gradient(to right, #000 32%, #fff 32%);
-	height: 80vh;
-	display: grid;
-	grid-template-columns: 14% 36% 50%;
-	grid-template-rows: 12% 74% 14%;
-	justify-content: space-evenly;
-/*	border: dashed 1px red;*/
-
+	display: flex;
+	position: relative;
 }   
 
 .content__picture {
-	grid-column: 2;
-	grid-row: 2; 
-	display: flex;
-	align-items: center;
-	align-self: center;
-	justify-content: space-evenly;
+	position: relative;
+	margin: 5% 0 6% 13%;
 }
 
 .main_picture {
@@ -202,24 +194,20 @@ body{
 }
 
 .content-container {
-	width: 500px;
-	height: auto;
-	grid-column: 3;
-	grid-row: 2;
-/*	border: dashed 1px red;*/
 	display: flex;
 	flex-flow: column nowrap;
-	margin-left: 10%;
+	margin-top: 5%;
+	margin-left: 4%;
 }
 
 .main__title{
 	font: bold 80px/82px Raleway, arial, helvetica, sans-serif;
-	padding-top: 98px;
+	padding-top: 110px;
 	margin: 0;
 }
 .description__main{
 	font: normal 15px/21px Raleway, arial, helvetica, sans-serif;
-/*	border: dashed 1px red;*/
+	padding-right: 10%;
 }
 
 .links {
@@ -239,7 +227,6 @@ body{
 
 .links-other {
 	display: inline-block;
-/*	border: dashed 1px red;*/
 }
 
 .links-other__description {
@@ -311,7 +298,8 @@ body{
 .product {
 	background: #fae8e4;
 	justify-content: space-evenly;
-  	height: 100vh;
+	padding-top: 100px;
+	padding-bottom: 100px;
   	display: grid;
  	grid-template-columns: 10% 40% 50%;
   	grid-template-rows: 15% 70% 15%;
@@ -328,10 +316,10 @@ body{
     margin-right: 5%;
 }
 
+
 .product-picture__gray {
 	position: absolute;
 	width: auto;
-	height: auto;
 	margin-right: 30%;
 	margin-bottom: 14%;
 }
@@ -339,7 +327,6 @@ body{
 .product-picture__pink {
 	position: absolute;
 	width: auto;
-	height: auto;
 	margin-left: 40%;
 }
 
@@ -375,7 +362,6 @@ body{
 	font: normal 15px/21px Raleway, arial, helvetica, sans-serif;
 	opacity: .5;
 	margin-bottom: 38px;
-/*	text-align: justify;*/
 }
 
 .product-case__color {
@@ -555,17 +541,18 @@ body{
 
 .look {
 	width:100%;
-	height: 100vh;
-	background: linear-gradient(to right, #EBE3D8 389px, #000 389px, #000 462px, #EBE3D8 462px);
+	background: linear-gradient(to right, #EBE3D8 27%, #000 27%, #000 32%, #EBE3D8 32%);
 	display: flex;
-	align-items: center;
-	justify-content: center;
+/*	align-items: center;
+	justify-content: center;*/
 	position: relative;  
 }
 
 .look-picture {
-	right: 15%;
-	height: auto;
+	margin-left: 7%;
+	margin-top: 10%;
+	margin-bottom: 10%;
+	margin-right: 37%;
 	position: relative;
 }
 
@@ -576,12 +563,13 @@ body{
 }
 
 .look-container {
-	width: 32%;
-	height: 44%;
 	display: flex;
 	flex-flow: column nowrap;
 	position: absolute;
-	left: 57%;
+	margin-left: 57%;
+	margin-top: 22%;
+/*	margin-right: 10%;*/
+	margin-bottom: 28%;
 }
 
 .look-case {
@@ -590,7 +578,6 @@ body{
 	padding: 43px;
 	background: #FAE8E4;
 	width: 390px;
-	height: 350px;
 	margin-bottom: 40px;
 }
 
@@ -695,7 +682,7 @@ body{
 	display: inline;
 	position: absolute;
 	background: url(img/Vector_2.3.svg);
-	min-width: 245px;
+	min-width: 120px;
 	height: 12px;
 	margin-left: 40px;
 	margin-top: 3px;
