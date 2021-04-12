@@ -45,7 +45,7 @@
     width: 500px;
 }
 .content__picture {
-    margin-left: 23%;
+    margin-left: 13%;
 }
 }
 
@@ -151,9 +151,12 @@
   justify-content: end;
   flex-direction: column-reverse;
   align-items: center;
+  padding-bottom: 530px;
 }
 
 .content-container {
+  position: absolute;
+  top: 250px;
   padding-bottom: 70px;
   align-items: center;
 }
@@ -192,12 +195,12 @@
   flex-flow: column;
   align-items: center;
   padding-top: 0;
-  padding-bottom: 200px;
+  padding-bottom: 40px;
 }
 
 .product-picture {
   align-items: center;
-  margin: 0 0 0 80px;
+  margin: -90px 0 0 80px;
 }
 
 .product-picture__pink {
@@ -333,6 +336,9 @@
 .content-container {
   margin: 0;
   width: 300px;
+}
+.content__picture {
+    display: none;
 }
 
 .look-container {
