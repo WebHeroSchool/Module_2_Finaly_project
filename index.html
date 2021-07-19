@@ -5,6 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>LOCO</title>
 		<link rel="stylesheet" href="fonts.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="media.css">
 	</head>
 	
 	<body>
@@ -12,23 +14,32 @@
 			<div class="header__logo header__logo_mobile">LOCO</div>
 
 			<div class="lang">
+				RU
 				<input id="lang__toggle" type="checkbox"/>
-				<label class="lang__button" for="lang__toggle">
-					<span></span>
-				</label>
+				<label class="lang__button" for="lang__toggle"></label>
+
+				<nav class="lang__box">
+					<a class="lang__box_item" href="">EN</a>
+				</nav>
 			</div>
 				
   			<div class="menu">
   				<input id="menu__toggle" type="checkbox"/>
 				<label class="menu__button" for="menu__toggle">
-					<span></span>
+					<span class=""></span>
 				</label>
+
+				<nav class="menu__box">
+					<a class="menu__box_item" href="">На главую</a>
+				</nav>
   			</div>
 		</header>
 
 		<main>
 			<div class="content">
-				<div class="content__picture"></div><!--Добавить главную картинку через background-->
+				<div class="content__picture">
+					<img class="main_picture" src="img/main_picture.png">
+				</div>
 				
 				<div class="content-container">
 					<div class="main">
@@ -42,8 +53,7 @@
 					<div class="links">
 						<button class="links__button">ЧИТАТЬ ДАЛЬШЕ</button>
 						<div class="links-other">
-							<a class="links-other__description">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
-							<img class="links-other__vector" src="img/Vector_1.svg" alt="links-other__vector">
+							<a class="links-other__description" href="#">ДРУГИЕ ПРЕДЛОЖЕНИЯ</a>
 						</div>							
 					</div>
 				</div>
@@ -91,7 +101,7 @@
 							<input class="product-counter__num" type="text" value="1">
 							<span class="product-counter__plus">+</span>
 						</div>
-						<button class="product-btn">ДОБАВИТЬ В КОРЗИНУ</button>
+						<button class="product-btn" href="#">ДОБАВИТЬ В КОРЗИНУ</button>
 					</div>
 				</div>
 				<div class="product-footer">
